@@ -132,7 +132,7 @@ h3{color: black; margin-bottom: 30px;}
 /*----------------------------------start of web-design-segment-------------------------------------*/
 
 #web-design-segment{
-    background-color: #b7b1b0;
+    background-color: #eae9e8;
 }
 #web-design-segment a{
     text-decoration: none;
@@ -203,7 +203,7 @@ h3{color: black; margin-bottom: 30px;}
 /*--------------------------------start of experience-segment-------------------------------------*/
 
 #experience-segment{
-    background-color: #b7b1b0;
+    background-color: #eae9e8;
 }
 
 #experience-segment h4{
@@ -230,74 +230,54 @@ h3{color: black; margin-bottom: 30px;}
 
 #contact{
     background: #f7f5f4;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
-#contact .row{
-    display: flex;
-    margin: auto; 
-}
-
-#contact .row .col{
-    display: flex;
-    margin: auto;
-}
-
-#contact p{
-    text-align: center;
-}
-
-#contact .fa{
-    text-align: center;
-    position: absolute;
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
+#contact img{
+    max-height: 200px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     transition: .5s ease;
     backface-visibility: hidden;
+    position: relative;
 }
-
 
 #contact .caption{
     transition: .5s ease;
-    opacity: 0;
+    color: black;
     position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
-}
+    font-size: 1em;
+} 
 
-#contact .text{
-    color: black;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-#contact .row:hover .fa{
+#contact .img-responsive:hover{
     opacity: 0.2;
-    cursor: pointer;
 }
 
-#contact .row:hover .caption{
+#contact .img-responsive:hover .caption{
     opacity: 1;
-    cursor: pointer;
 }
 
+/*------------------------------------start of bottom-segment------------------------------------------*/
 
-
-
-/* #projects .text{
-    color: black;
-    font-size: 11px;
-    font-weight: bold;
-} */
-
-/* 
-
-#projects .img-container{
-        position: relative;
-        width: 100%;
+#bottom-segment{
+    background: #eae9e8;
 }
 
-#projects ul li{
-    list-style: none;
-} */
+#bottom-segment h5{
+    text-align: center; 
+}
+#bottom-segment img{
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: -20px;
+}
