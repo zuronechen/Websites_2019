@@ -34,7 +34,7 @@ body{
     width: 70%;
     margin: 0 auto;
     vertical-align: middle;
-    margin-top: 40px; 
+    margin-top: 50px; 
     margin-bottom: 50px
 }
 
@@ -45,35 +45,27 @@ h3{color: black; margin-bottom: 30px;}
 /*opening-segment structure*/
 #opening-segment{
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     background: none;
     box-shadow: none;
 }
 
-/*opening-segment buttons*/
 #opening-segment .btn{
-    background:none;
-    border: 2px solid #332f2c;
-    color:#332f2c;
-    font-weight: bold;
-    font-size: 13px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-#opening-segment a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #282828;
     border: 2px solid #282828;
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
+    background-color: transparent;
+    width: 90px;
 }
 
-#opening-segment a:hover{
+#opening-segment .btn{
+    text-decoration: none;
+    font-weight: bold;
+    color: #282828;
+}
+
+#opening-segment .btn:hover{
     color:#e84845; 
     border: 2px solid #e84845
 }
@@ -84,7 +76,7 @@ h3{color: black; margin-bottom: 30px;}
 }
 
 /*opening-segment "Josie Chen" logo (image)*/
-#opening-segment img{
+#opening-segment #profile-picture, #name-logo{
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -96,7 +88,24 @@ h3{color: black; margin-bottom: 30px;}
     color: #332f2c; font-weight: bold; text-align: center;
 }
 
+.modal-content{
+    background-color: #e8e8e8;
+    width: 80%;
+    margin-right: auto; 
+    margin-left: auto;
+}
 
+#the-modal p{
+    text-align: left;
+    margin-top: 25px;
+}
+
+#the-modal .row{
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    margin-bottom: 50px;
+}
 /*------------------------------------start of about-segment------------------------------------------*/
 
 
@@ -143,6 +152,10 @@ h3{color: black; margin-bottom: 30px;}
     color: black;
 }
 
+#web-design-segment h4{
+    text-align: left;
+}
+
 #web-design-segment a:hover{
     text-decoration: none;
     color: white;
@@ -163,7 +176,6 @@ h3{color: black; margin-bottom: 30px;}
 
 /*------------------------------------start of art-segment------------------------------------------*/
 
-
 #art-segment a{
     text-decoration: none;
     color: #c65151;
@@ -174,10 +186,10 @@ h3{color: black; margin-bottom: 30px;}
 }
 
 #art-segment img{
-    max-height: 300px;
+    max-height: 290px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
     display: block;
     transition: .5s ease;
@@ -186,10 +198,10 @@ h3{color: black; margin-bottom: 30px;}
 }
 
 #art-segment .caption{
+    width: 200px;
+    height: 200px;
     transition: .5s ease;
-    color: black;
-    position: absolute;
-    width: 75%;
+    position: absolute;;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -198,10 +210,17 @@ h3{color: black; margin-bottom: 30px;}
     font-size: 20px;
 } 
 
+#art-segment p{
+    color: #282828;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 #art-segment .img-responsive:hover{
     opacity: 0.2;
-    position: relative; 
-    top: -3px;
 }
 
 #art-segment .img-responsive:hover .caption{
@@ -214,8 +233,17 @@ h3{color: black; margin-bottom: 30px;}
     background-color: #eae9e8;
 }
 
+#experience-segment .row{
+    margin-bottom: 50px;
+}
+
+#experience-segment .col-md-3{
+    border-left: 2px solid #b5afad;
+}
+
 #experience-segment h4{
-    color: black;
+    color: #282828;
+    text-align: left;
 }
 
 #experience-segment h5{
@@ -224,12 +252,13 @@ h3{color: black; margin-bottom: 30px;}
 
 #experience-segment a{
     text-decoration: none;
-    color: black;
+    color: #c65151;
+    margin-bottom: 30px;
 }
 
 #experience-segment a:hover{
     text-decoration: none;
-    color: white;
+    color: #282828;
 }
 
 
@@ -240,9 +269,14 @@ h3{color: black; margin-bottom: 30px;}
     background: #f7f5f4;
     margin-bottom: 30px;
 }
+#contact .row{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #contact img{
-    max-height: 200px;
+    max-height: 90px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -255,12 +289,6 @@ h3{color: black; margin-bottom: 30px;}
 #contact .caption{
     transition: .5s ease;
     color: black;
-    position: absolute;
-    width: 75%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
     font-size: 1em;
 } 
